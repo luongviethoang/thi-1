@@ -7,7 +7,7 @@ int a,b;
 int sum(a,b);
 int sub(a,b);
 int mul(a,b);
-int chia(a,b);
+float chia(a,b);
  main(int argc, char *argv[]) {
 	int chon;
 	char nhap,nhapdiem;
@@ -37,7 +37,7 @@ int chia(a,b);
 	 		mul(a,b);
 	 		break;
 	 	case 4:
-	 		div(a,b);
+	 		chia(a,b);
 	 		break;
 	}
 	printf("ban co muon tiep tuc thuc hien cac phep tinh\n");
@@ -65,9 +65,9 @@ int mul( int a,int b)
 {
 	printf("mul = %d",a*b);
 }
-int chia(int a ,int b)
+float chia(int a ,int b)
 {
-	printf("div = %d",a/b);
+	printf("div = %f",(float)a/b);
 }
 
 	
